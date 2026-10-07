@@ -49,7 +49,7 @@ class vehicles_DB(models.Model):
     dl_no=models.IntegerField(primary_key=True)
     
 class vehicles_DBAdmin(admin.ModelAdmin):
-    list_display=["reg_no","owner_name","vehicle_model_name","owner_contact_no","dl_no"]
+   list_display=["reg_no","owner_name","vehicle_model_name","owner_contact_no","dl_no","owner_Email","owner_Address"]
 
 
 admin.py
@@ -60,7 +60,7 @@ admin.site.register(vehicles_DB,vehicles_DBAdmin)
 
 
 ## OUTPUT
-![alt text](image.png)
+![alt text](image-1.png)
 
 
 ## RESULT
